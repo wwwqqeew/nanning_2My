@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/PopuWnd.css">
+<script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/PopuWnd.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+	var addWnd = function(){
+		var _wnd = new window.PopuWnd({title:"标题",url:"IframeContent.html",width:600,height:400});
+		_wnd.init(true);
+	}
+</script>
+<input type="button" onclick="window.PopuWnd.close();" style='position: fixed; top:100px;' value='删除'>
+<input type="button" onclick="addWnd();"  style='position: fixed; top:120px;' value='111添加'>
+</body>
+</html>
+
+

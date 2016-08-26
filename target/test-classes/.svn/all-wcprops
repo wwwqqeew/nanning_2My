@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/industryapplication/!svn/ver/11832/nntl/target/test-classes
+END
+application.functional.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/industryapplication/!svn/ver/11832/nntl/target/test-classes/application.functional.properties
+END
+application.test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/industryapplication/!svn/ver/11832/nntl/target/test-classes/application.test.properties
+END
+application.development.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/industryapplication/!svn/ver/11832/nntl/target/test-classes/application.development.properties
+END

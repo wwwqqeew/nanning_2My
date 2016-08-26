@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/industryapplication/!svn/ver/11971/nntl/src/main/java/com/ritu/nanning/service/modules
+END
+testMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/modules/testMain.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/modules/UserService.java
+END
+TrackService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/industryapplication/!svn/ver/12505/nntl/src/main/java/com/ritu/nanning/service/modules/TrackService.java
+END
+CrossServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/modules/CrossServiceTest.java
+END
+EquipmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/industryapplication/!svn/ver/11971/nntl/src/main/java/com/ritu/nanning/service/modules/EquipmentService.java
+END
+DepartmentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/industryapplication/!svn/ver/11948/nntl/src/main/java/com/ritu/nanning/service/modules/DepartmentService.java
+END
+DemoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/industryapplication/!svn/ver/12408/nntl/src/main/java/com/ritu/nanning/service/modules/DemoService.java
+END

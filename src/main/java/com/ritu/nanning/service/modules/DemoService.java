@@ -1,0 +1,137 @@
+package com.ritu.nanning.service.modules;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.ritu.nanning.entity.Demo;
+import com.ritu.nanning.repository.DemoDao;
+import com.ritu.nanning.utils.DateUtil;
+import com.ritu.nanning.utils.base.BaseService;
+import com.ritu.nanning.utils.base.EntityDao;
+import com.ritu.nanning.utils.base.EntityImplDao;
+import com.ritu.nanning.utils.excel.ImportMsg;
+
+/**
+ * @function demo业务层
+ * @author cheng.G.Y
+ * @date 2014-09-25
+ * @latitude 1.0
+ */
+@Component
+@Transactional(readOnly = true)
+public class DemoService extends BaseService<Demo, Long> {
+
+	private DemoDao demoDao;// JPA持久层对象（调用的是JPA的方法）
+
+	private EntityImplDao demoImplDao;// 持久层对象（调用的是自己写的方法的方法）
+
+	@Override
+	protected EntityDao getEntityDao() {
+		return this.demoDao;
+	}
+
+	// 用于在公共方法中：分页排序
+	@Override
+	protected PagingAndSortingRepository getPASRDao() {
+		return this.demoDao;
+	}
+
+	// 用于在公共方法中：调用自己写的方法
+	@Override
+	protected EntityImplDao getEntityImplDao() {
+		return demoImplDao;
+	}
+
+	@Autowired
+	public void setDemoDao(DemoDao demoDao) {
+		this.demoDao = demoDao;
+	}
+
+	@Autowired
+	public void setDemoImplDao(EntityImplDao demoImplDao) {
+		this.demoImplDao = demoImplDao;
+	}
+
+	/**
+	 * 导入Excel
+	 * 
+	 * @param list
+	 */
+	@Override
+	@Transactional(readOnly = false)
+	public ImportMsg importExcel(List<List<String>> list) {
+		String id = "1";
+		// List<List<String>> list = testPoiU("d:\\新文件名.xls");
+		// System.out.println("数据条数："+list.size());
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(i + " ");
+			for (int j = 0; j < list.get(i).size(); j++) {
+				System.out.print("[" + j + "]" + list.get(i).get(j) + "  ");
+			}
+			System.out.println(" ");
+		}
+
+		ImportMsg msg = new ImportMsg();
+		msg.allDataInt = list.size() - 1;
+		StringBuffer MSG = new StringBuffer();
+
+		for (int i = 1; i < list.size(); i++) {
+			// for (int j = 0; j < list.get(i).size(); j++) {
+			// System.out.print("["+j+"] " + list.get(i).get(j));
+
+			int statrVal = 1;// 读取数据的开始行数，第一列为列序号，第二为编号，数据第三开始
+			Demo demo = new Demo();
+			// Excel列表检测
+			// 主键
+			// 时间类型检测
+			// 更新时间
+			// String dataUpdateDate = list.get(i).get(statrVal++).trim();//
+			// try {
+			// demo.setUpdateDate(DateUtil.StringToDate(dataUpdateDate));//日期
+			// } catch (Exception e) {
+			// msg.FaltSaveInt++;
+			// MSG.append("第"+(i+1)+"行，第"+(statrVal)+"列，日期格式不正确<br>\n");
+			// continue;
+			// }
+			// 名称1
+			String dataName = list.get(i).get(statrVal++).trim();
+			if (dataName == null || "".equals(dataName)) {
+				msg.FaltSaveInt++;
+				MSG.append("第" + (i + 1) + "行，第" + (statrVal)
+						+ "列，名称不正确能为空<br>\n");
+				continue;
+			} else {
+				demo.setName(dataName);
+			}
+
+			// 名称2
+			String dataName2 = list.get(i).get(statrVal++).trim();
+			if (dataName2 == null || "".equals(dataName2)) {
+				msg.FaltSaveInt++;
+				MSG.append("第" + (i + 1) + "行，第" + (statrVal)
+						+ "列，名称2不正确能为空<br>\n");
+				continue;
+			} else {
+				demo.setName2(dataName2);
+			}
+
+			try {
+				add(demo);
+				msg.successSaveInt++;
+				System.out.println("保存成功：" + demo);
+			} catch (Exception e) {
+				msg.FaltSaveInt++;
+				System.out.println("信息添加失败:" + demo);
+			}
+		}
+		msg.setMsg(MSG.toString());
+		System.out.println(MSG);
+		return msg;
+
+	}
+
+}

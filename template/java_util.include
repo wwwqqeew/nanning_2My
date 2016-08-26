@@ -1,0 +1,19 @@
+<#include "/macro.include"/>
+<#include "/java_copyright.include">
+<#include "/judgeProperty.include">
+<#assign className = table.className>   
+<#assign classNameLower = className?uncap_first> 
+
+
+
+<#-- 获取主键名称（表名称）  <@getTablePkName/>-->
+<#macro getTablePkName>
+<#list table.columns as column><#if (column.pk)>${htm_notes(column)}</#if></#list></#macro>
+
+<#-- 获取主键属性  <@getTablePkType/>-->
+<#macro getTablePkType>
+<#list table.columns as column><#if (column.pk)>${java_p(column)}</#if></#list></#macro>
+
+<#-- 获取主键  <@getTablePk/>-->
+<#macro getTablePk>
+<#list table.columns as column><#if (column.pk)>${column}</#if></#list></#macro>

@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+
+.taskInput1{
+	width: 98.5%;
+}
+
+.taskInput2{
+	width: 100%;
+}
+
+.taskInput3{
+	width: 90%;
+}
+
+.taskSelect{
+	width: 100%;
+}
+
+.task-item-content-append-container-y-new{
+	top:50px;
+	height: 60%;
+}
+
+.taskmapdiv-new{
+	width: 100%; 
+	height: 100%; 
+	clear: both; 
+	border: 1px; 
+	border-color: gray;
+}
+
+.add_task_but-new{
+	top: auto;
+	left: 0px;
+	width: 100%;
+	height: 30%;
+	bottom: 0px;
+}
+
+.formTable{
+	BORDER-COLLAPSE: collapse;
+	width: 98%;
+}
+
+.requireCls{
+	color:#FF0000;
+}
+
+.task-item-result-show-new{
+	height: 120px;
+	overflow:scroll;
+}
+
+.task-history-item-search-view{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+
+/*界面修改 */
+/*表格*/
+.add_task_but-new1{
+	top: auto;
+	left: 0px;
+	width: 100%;
+	height: 30%;
+	bottom: 18px;
+}
+.add_task_but-x-new1{
+	position: relative;
+	width: 96%;
+	margin: auto;
+	
+	
+}
+
+.add_line_but .task_table{
+	height: auto;
+	width:99%;
+	 margin:0px 8px; 
+	border:1px solid #999999;
+	/* border-spacing: 0px; */
+	
+}
+.add_line_but .add_task_but-x-new1 .task_table td{
+	border:1px solid #999999;
+	text-align: center;;
+	padding: 1px;
+	
+}
+.add_line_but .add_task_but-x-new1 .task_table .line_left{
+	  width:18%;
+	 background-color:#f7f7ef;
+	 color:#333333;
+	 padding: 8px;
+}
+
+.add_line_but .add_task_but-x-new1  .text-input,.add_line_but .add_task_but-x-new1 .frame-select,.task-history-item-search-view .text-input{
+    color: rgb(119, 119, 119);
+ 	height:31px; 
+	/* width:95%;  */
+	 border: 1px solid rgb(170, 170, 170);
+	 background-color: white; 
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius:3px;
+	
+}
+.add_line_but .iframe-button-div{
+	text-align: center;
+	margin-top: 10px;
+	
+}
+.add_line_but .iframe-button-div .left_save{
+	 margin-right: 120px;
+}
+/*地图*/
+.task-item-content-append-container-y-new1{
+   position: absolute;
+	top:46px;
+	height: 60%;
+	
+}
+
+.item-content-append-container-x-new1 {
+	position: relative;
+	height: 100%;
+	margin: 0px 8px;
+}
+
+.item-content-append-container-new1 {
+	height: 100%;
+	width: 96%;
+	position: relative;
+	border: 1px solid #333333; 
+	margin: auto;
+}
+
+.taskmapdiv-new1{
+	width: 100%; 
+	height: 100%; 
+	clear: both; 
+	border-color: gray;
+	
+}
+.taskInput3new{
+	width: 100%;
+}
+.taskInput2new{
+	width: 99.5%;
+}
+.add_line_but .add_task_but-x-new1  .text-input:focus,.add_line_but .add_task_but-x-new1 .frame-select:focus,.task-history-item-search-view .text-input:focus
+{ 
+ border:1px solid #58b7dd;
+ box-shadow: 0 0 8px rgba(103, 166, 217, 1);
+ background-color: #EEEEEE;
+}

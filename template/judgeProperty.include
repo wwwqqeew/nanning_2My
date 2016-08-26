@@ -1,0 +1,168 @@
+<#macro htm column function theused=0><#--是否复合相应的条件，复合则执行<#nested> <@htm column=column function="textarea"> 11 </@htm>-->
+	<#assign truOrFalse=false>
+	<#if  column.columnNameLower!="updateDate" && theused==0 && !column.pk>
+		<#switch function>
+			<#case "checkbox">  <#--选择筐 254 varchar-->
+				<#assign truOrFalse = (column.size == 254 && column.sqlTypeName == "varchar")>
+			<#break>
+			<#case "input">  <#--输入筐 255 varchar-->
+				<#assign truOrFalse = (column.size == 255 && column.sqlTypeName == "varchar") || (column.size == 10 && column.sqlTypeName == "int")>
+			<#break>
+			<#case "textarea">  <#--文本筐 256 varchar-->
+				<#assign truOrFalse = (column.size == 256 && column.sqlTypeName == "varchar")>
+			<#break>
+			<#case "datetime">  <#--日期筐 datetime-->
+				<#assign truOrFalse = (column.sqlTypeName == "datetime" )>
+			<#break>
+			<#case "select">  <#--下拉选择筐 40 varchar-->
+				<#assign truOrFalse = (column.size == 40 && column.sqlTypeName == "varchar")>
+			<#break>
+			<#case "radio">  <#--单选筐 tinyint || BIT -->
+				<#assign truOrFalse = (column.sqlTypeName == "tinyint" || column.sqlTypeName == "BIT")>
+			<#break>
+			<#case "radio_df"> <#---->
+				<#assign truOrFalse = (column.sqlTypeName == "bigint"&& column.size == 20)>
+			<#break>
+			<#default>
+		</#switch>
+	</#if>
+	<#if truOrFalse >
+<#nested>
+	</#if >
+</#macro>
+
+
+<#--是否复合相应的条件，复合则执行<#nested> <@htm column=column function="textarea" theT=true> 11 </@htm>-->
+<#macro htm_css_js column function theT>
+	<#assign truOrFalse=false>
+	<#if theT==0>
+		<#switch function>
+		<#case "datetime">
+				<#assign truOrFalse = (column.sqlTypeName == "datetime")>
+		<#break>
+		<#default>
+		</#switch>
+	</#if >
+	<#if truOrFalse>
+<#nested>
+	</#if >
+</#macro>
+
+<#macro htm_used column theused>
+	<#if theused ==0 && column.columnNameLower!="remark" && column.columnNameLower!="updateDate">
+<#nested>
+	</#if >
+</#macro>
+
+
+<#--Class类里的各种验证方法-->
+<#macro htm_css_check column function >
+	<#assign thert="">
+	<#list function as str>
+		<#switch str>
+		<#case "required"><#--日期验证方法-->
+				<#assign truOrFalse = (column.sqlTypeName == "datetime")>
+		<#break>
+		<#default>
+		</#switch>
+	</#list>
+</#macro>
+
+
+<#--JAVA用 -->
+<#macro java_my column function theused=0>
+<#assign truOrFalse=false>
+<#if theused ==0 && column.columnNameLower!="remark" && column.columnNameLower!="updateDate">
+	<#switch function>
+		<#case "sm">
+			<#assign truOrFalse = (column.columnAlias?index_of("$sm$") >-1)>
+		<#break>
+		<#case "_id">
+			<#assign truOrFalse = (column.columnNameLower?index_of("Id") >-1) && (column.sqlTypeName == "bigint"&& column.size == 20)>
+		<#break>
+		<#default>
+	</#switch>
+</#if >
+	<#if truOrFalse >
+<#nested>
+	</#if >
+</#macro>
+
+<#--数据库同名检测  注释包含$sm$则进行数据库同名检测-->
+<#macro js column function>
+	<#assign truOrFalse=false>
+	<#switch function>
+		<#case "sm">
+			<#assign truOrFalse = (column.columnAlias?index_of("$sm$") >-1)>
+		<#break>
+		<#default>
+	</#switch>
+	<#if truOrFalse>
+<#nested>
+	</#if >
+</#macro>
+
+<#--检测是否是中文 注释包含$cn$则进行页面中文输入检测 -->
+<#function htm_nameCheck column>
+	<#if (column.columnAlias?index_of("$cn$") >-1)>
+<#return "onKeyUp=\"clearNoName(event,this)\" onBlur=\"checkName(this)\"">
+	<#else>
+<#return "">
+	</#if>
+</#function>
+
+<#--JAVA用-->
+<#function java_p column>
+	<#if (column.javaType?last_index_of(".") >-1)>
+<#return column.javaType?substring(column.javaType?last_index_of(".")+1)>
+	<#else>
+<#return column.javaType>
+	</#if>
+</#function>
+
+	
+<#--输出无特殊字符的注释 ${htm_notes(column)}-->
+<#function htm_notes column>
+	<#if (column.columnAlias?index_of("$") >-1)>
+<#return  column.columnAlias?substring(0,column.columnAlias?index_of("$"))>
+	<#else>
+<#return column.columnAlias>
+	</#if>
+</#function>
+
+<#--输出JS页面的属性字段 -->
+<#function js_noSimple column>
+	<#if (column.columnAlias?index_of("$sm$") >-1)>
+<#return "var former"+column.columnName+" = \"\";">
+	<#else>
+<#return "">
+	</#if>
+</#function>
+
+<#--外键字段的输出-->
+<#function fk_notes column>
+	<#if (column?index_of("Id") >-1)>
+<#return  column?substring(0,column?index_of("Id"))>
+	<#else>
+<#return column>
+	</#if>
+</#function>
+
+<#--检测是否是外键的字段，是就执行true <#if isforeignKey(column)><#if>-->
+<#function isforeignKey column >
+	<#assign truOrFalse=false>
+	<#list table.importedKeys.associatedTables?values as foreignKey>
+	<#assign fkSqlTable = foreignKey.sqlTable>
+	<#assign fkTable    = fkSqlTable.className>
+	<#assign fkPojoClass = fkSqlTable.className>
+	<#assign fkPojoClassVar = fkPojoClass?uncap_first>
+	
+		<#assign truOrFalse= ((column?index_of(fkPojoClassVar) >-1) && (column?index_of("Id") >-1)) >
+			<#if truOrFalse>
+				<#break>
+			<#else>
+			</#if >
+	</#list>
+	<#return truOrFalse>
+</#function>
+

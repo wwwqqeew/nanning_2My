@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/industryapplication/!svn/ver/11952/nntl/src/main/java/com/ritu/nanning/repository
+END
+DepartmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/industryapplication/!svn/ver/11942/nntl/src/main/java/com/ritu/nanning/repository/DepartmentDao.java
+END
+DemoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/DemoDao.java
+END
+DemoImplDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/DemoImplDao.java
+END
+RoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/industryapplication/!svn/ver/11896/nntl/src/main/java/com/ritu/nanning/repository/RoleDao.java
+END
+RoleImplDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/RoleImplDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/UserDao.java
+END
+UserImplDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/UserImplDao.java
+END
+TrackDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/industryapplication/!svn/ver/12504/nntl/src/main/java/com/ritu/nanning/repository/TrackDao.java
+END
+TrackImplDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/industryapplication/!svn/ver/12504/nntl/src/main/java/com/ritu/nanning/repository/TrackImplDao.java
+END
+JobDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/repository/JobDao.java
+END
+ResourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/11896/nntl/src/main/java/com/ritu/nanning/repository/ResourceDao.java
+END
+EquipmentDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/industryapplication/!svn/ver/11952/nntl/src/main/java/com/ritu/nanning/repository/EquipmentDao.java
+END

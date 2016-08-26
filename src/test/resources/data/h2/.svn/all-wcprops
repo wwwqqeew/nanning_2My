@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/industryapplication/!svn/ver/11819/nntl/src/test/resources/data/h2
+END
+import-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/industryapplication/!svn/ver/11819/nntl/src/test/resources/data/h2/import-data.sql
+END
+cleanup-data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/industryapplication/!svn/ver/11819/nntl/src/test/resources/data/h2/cleanup-data.sql
+END

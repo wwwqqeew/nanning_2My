@@ -1,0 +1,10 @@
+#modules setting
+
+UserManagement={"name"\:"UserManagement","type"\:"nav","search"\:"user","title" \: "\u7528\u6237\u7ba1\u7406","url" \: "usermanagement" }
+Help={"name"\:"Help","type"\:"help","search"\:"order","title" \: "\u5e2e\u52a9","url" \: "help"}
+RoleManagement={"name"\:"RoleManagement","type"\:"nav","search"\:"user","title" \: "\u6743\u9650\u7ba1\u7406","url" \: "rolemanagement" }
+TestManagement={"name":"TestManagement","type":"nav","search":"order","title" : "\u6d4b\u8bd5\u7ba1\u7406","url" : "testmanagement" }
+DemoManagement={"name":"DemoManagement","type":"nav","search":"order","title" : "demo\u7ba1\u7406","url" : "demomanagement" }
+ProcessManagement={"name":"ProcessManagement","type":"nav","search":"order","title" : "\u8fdb\u7a0b\u7ba1\u7406","url" : "processmanagement" }
+TestMapdemoManagement={"name":"TestMapdemoManagement","type":"nav","search":"order","title" : "\u9366\u677f\u6d58\u5a34\u5b2d\u762f","url" : "testmapdemomanagement" }
+MirrorvoManagement={"name":"MirrorvoManagement","type":"nav","search":"order","title" : "\u540e\u89c6\u955c\u7BA1\u7406","url" : "mirrorvomanagement" }

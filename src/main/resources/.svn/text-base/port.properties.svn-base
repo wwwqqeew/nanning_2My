@@ -1,0 +1,24 @@
+#Update 'port.print' value
+#Wed Oct 09 09:15:30 CST 2013
+track.ip=42.62.56.73
+track.upPort=10011
+track.findPort=10010
+#//\u76D1\u63A7
+#track.ip=42.62.56.73
+#track.upPort=10011
+#track.findPort=10010
+
+//\u4EA4\u901A\u706F\u7CFB\u7EDF
+trff.ip=127.0.0.1
+trff.port=3030
+trff.userName=_pad
+trff.passWord=_pad
+
+//\u9ED8\u8BA4\u7684\u81EA\u52A8\u89E3\u9501\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09
+trff.defaultClearLockTime=60000
+
+//\u5F53\u4E00\u4E2A\u8BF7\u6C42\u53D1\u9001\u65F6\u95F4\u8FBE\u5230
+//defaultClearLockTime*lockDistanceTime\u6BEB\u79D2\u540E\u672A\u89E3\u9501
+//\u8BE5\u8DEF\u53E3\u7684\u65B0\u9501\u5B9A\u8BF7\u6C42\u5C06\u53EF\u4EE5\u66FF\u6362\u8FD9\u6761\u4FE1\u606F
+//\u4F7F\u5F97\u8BE5\u8DEF\u53E3\u53EF\u4EE5\u53D1\u9001\u9501\u5B9A\u8BF7\u6C42
+trff.lockDistanceTime=2

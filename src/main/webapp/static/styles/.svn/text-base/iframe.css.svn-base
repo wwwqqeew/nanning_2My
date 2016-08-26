@@ -1,0 +1,252 @@
+/* popuwnd-iframe Begin*/
+html,body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;!important;
+	color: #7d7d7d;
+	font-family: monospace;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.noEmpty{
+	color: #FF0000;
+}
+.hid{
+	display: none !important;
+}
+.error2 {
+  border:#999 1px solid;
+  border-color: red;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(220,20,60, 1);
+  outline: 0 none;
+}
+.iframe-button{
+	position: relative;
+    top: 10px;
+    height: 25px;
+    background: none repeat scroll 0% 0% rgb(117, 187, 221);
+    border: 0px solid rgb(117, 187, 221);
+    cursor: pointer;
+    width: 72px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 2px 1px 1px rgb(117, 187, 221);
+    font-size: 12px;!important;
+	}
+.btn-base-style {
+  background: url("../images/btn_empty.png");
+  background-repeat: no-repeat;
+  border: 0px solid #FFF !important;
+  color: #D1DFEA;
+  cursor: pointer;
+  font-weight: bold;
+  height: 37px;
+  line-height: 37px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.iframe-form{
+	top: 20px;
+	position: relative;
+}
+
+.text-input, .item-operate select, .item-operate textarea, .iframe-select{
+    color: rgb(119, 119, 119);
+    border: 1px solid rgb(170, 170, 170);
+}
+.iframe-table {
+  border-bottom: 1px solid #7F9DB9;
+  border-collapse: collapse;
+  border-right: 1px solid #7F9DB9;
+}
+.iframe-table td{
+	padding: 5px 0px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-left: 1px solid #7F9DB9;
+  	border-top: 1px solid #7F9DB9;
+}
+.iframe-table .title{
+	width: 130px;
+	text-align: right;
+}
+.iframe-table .td-input,.iframe-table .td-select{
+	padding: 0px 4px;
+	width: 443px;
+	text-align: left;
+}
+
+.iframe-button-table {
+	padding: 0px 40px 0px 40px;
+}
+
+.iframe-table li{
+	/*padding: 0px 0px 5px 0px;*/
+	list-style-type:none;
+}
+.iframe-not-null{
+	color: #EA5200;
+}
+.iframe-radius{
+ 	/*border-radius: 3px;*/
+ }
+ .iframe-select{
+ 	width: 120px;
+}
+  .iframe-form span.error {
+  background:url("../images/unchecked.gif") no-repeat 0px 0px;
+  padding-left: 14px;
+  margin-left: 1em;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #EA5200;
+}
+ .order-print-sl{
+	padding: 1px 0px;
+	border: 1px #75bbdd solid;
+	color: rgb(119, 119, 119);
+}
+/*用户编辑样式*/
+.edit-form .edit-table {
+       margin:0px; 
+   margin-left:80px;
+   margin-right:80px;
+    margin-top:13px; 
+    width:79%;
+	 border:1px solid #999999; 
+	 border-bottom: none;
+	  border-spacing: 0px;
+}
+ .edit-form{
+	top: 0px;
+	margin: 0px;
+	padding:0px;
+	width:100%;
+	position: relative; 
+} 
+ .edit-form .edit-table  td{
+	border: none;
+	border-bottom: 1px solid #999999;
+	
+}  
+ .edit-form .edit-table  .right{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 0px
+} 
+.edit-form .edit-table  .left{
+	padding:5px;
+	 /*  padding-left:60px; */
+	 width:23%;
+	text-align:right;
+	font-weight:500;
+	color: #333333;
+  
+} 
+.edit-form .edit-table .text-input,.edit-form .edit-table .item-operate select,.edit-form .edit-table .iframe-select{
+    color: rgb(119, 119, 119);
+    border: 1px solid rgb(170, 170, 170);
+    width: 312px;
+	height:28px;
+	background-color: white;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius:3px;
+	
+}
+.edit-form .edit-table .iframe-textarea{
+    color: rgb(119, 119, 119);
+    border: 1px solid rgb(170, 170, 170);
+    width: 312px;
+	height:100px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+	border-radius:3px;
+}
+/*用户显示*/
+/* .iframe_div {
+	margin:13px 80px;
+	 padding: 15px;
+}
+
+.iframe_div  .info{
+	   border:1px solid #808080;
+	   color: #5d5d5d;
+	    border-bottom: none; 
+	   padding: 15px;
+	   
+}
+#last{
+	      border-bottom: 1px solid #808080; 
+	     
+}
+.iframe_div  .info .key{
+	    float:left;
+	    height: auto;
+	    color: #333333;
+	    
+}
+
+.iframe_div  .info .kvalue{
+	   height:auto;
+	  text-align: left;
+} */
+/*角色编辑*/
+.iframe-table-role {
+	width:100%;
+  margin-top: 0px;
+  padding: 0px;
+  border: none;
+ border-spacing: 0px;
+}
+
+.iframe-form-role{
+	top: 0px;
+	position: relative;
+	padding: 0px;
+}
+
+.iframe-table-role tr{
+
+}
+
+.iframe-table-role td{
+	color: #5d5d5d;
+	font-weight: 600;
+	padding: 10px;
+	border:none;
+	border-bottom:1px solid #999999;
+	/* border-bottom:1px solid #999999;  */
+}
+
+.iframe-table-role .one{
+	color: #333333;
+	text-indent: 35px;
+	padding-top: 20px;
+	
+}
+.iframe-table-role .second{
+	text-indent: 62px;
+	color: #333333;
+}
+.iframe-table-role .third{
+	font-size: 14px;
+	font-weight: normal;
+}
+.iframe-button-div{
+	padding: 0px;
+	text-align:center;
+	margin-top: 22px;
+	margin-bottom: 16px;
+	
+}
+
+.iframe-button-div .left_save{
+	margin-right: 120px;
+}
+ /* popuwnd-iframe End*/

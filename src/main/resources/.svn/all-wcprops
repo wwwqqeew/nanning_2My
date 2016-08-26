@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources
+END
+port.properties
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/port.properties
+END
+setting.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/setting.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/application.properties
+END
+logback.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/logback.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/applicationContext.xml
+END
+applicationContext-shiro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/applicationContext-shiro.xml
+END

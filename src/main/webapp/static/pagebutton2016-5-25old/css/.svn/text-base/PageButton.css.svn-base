@@ -1,0 +1,57 @@
+.page-btns {
+	position: relative;
+	/* right: 15px; */
+}
+
+.page-btns input {
+	font: 12px;
+	font-family: monospace;
+	color: #777777;
+	margin: 5px 5px;
+	text-align: center;
+	width: 19px;
+	height: 25px;
+	background: #D1D1D1;
+	border: 1px #d1d1d1 solid;
+	cursor: pointer;
+	padding: 0px;
+	text-align: center;
+	line-height: 20px;
+}
+.pre-page-btn{
+	
+}
+.page-btn {
+	background:none !important;
+	border: none !important;
+}
+.page-btns{
+	background:none;
+}
+.page-btns:hover{
+	/* background: #75bbdd; */
+}.page-btn:hover {
+	background: #fcfeff !important;
+}
+
+.page-btns .page-btn:active, .page-btns .current-page-btn {
+  background: none repeat scroll 0 0 #F0F0F0;
+  color: #777777;
+  cursor: default;
+}
+
+.page-btns .pre-page-btn {
+	font-family: monospace;
+}
+
+.page-btns .pre-page-btn:hover {
+	background: #75bbdd;
+}
+
+.page-btns .next-page-btn {
+	font-family: monospace;
+}
+
+.page-btns .next-page-btn:hover {
+	background: #75bbdd;
+}

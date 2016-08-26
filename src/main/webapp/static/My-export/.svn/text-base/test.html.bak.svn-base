@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+</body>
+
+<div class="export-main">
+	<div class='export-div' style="height: 100px;">
+		<div class='export-del'></div>
+		<div class='export-contain'>
+		    <div class='export-slt-all'>
+		    	<label><input type='checkbox' class='slt-all'>全选</label>
+		    	<label><input type='checkbox' class='cent-all'>取消</label>
+		    </div>
+		    <div class='main-contain'>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    	<br>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    	<br>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>全选</label>
+		    	<label class="cb-label"><input type='checkbox' class='sl'>取消</label>
+		    </div>
+			<div class='export-btn' >
+				<input class='export-save export-button my-if-btn' value='确定'>
+				<input class='export-cat export-button my-if-btn' value='取消'>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+
+</div>
+
+	<object   width=800   height=1000   
+      classid="CLSID:106E49CF-797A-11D2-81A2-00E02C015623" name="tiffObj">   
+	   图片加载失败，请先下载图片控件<a class='im2' href="alternatiff-1.8.exe">点击下载</a>
+		<param   name="src" class='im'  value="tiff.jpg">   
+		<param   name="negative"   value="no">  
+    </object> 
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="DivMove.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){ 
+	alert($('.im2').is(":hidden"));
+if ((navigator.userAgent.indexOf('MSIE') >= 0) 
+    && (navigator.userAgent.indexOf('Opera') < 0)){
+
+    alert('你是使用IE');
+}else if (navigator.userAgent.indexOf('Firefox') >= 0){
+    alert('你是使用Firefox')
+}else if (navigator.userAgent.indexOf('Opera') >= 0){
+    alert('你是使用Opera')
+}else{
+    alert('你是使用其他的<a href="https://www.baidu.com/s?wd=%E6%B5%8F%E8%A7%88%E5%99%A8&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1dBn1T3PhfzP1-hujDYuAc30ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6K1TL0qnfK1TL0z5HD0IgF_5y9YIZ0lQzqlpA-bmyt8mh7GuZR8mvqVQL7dugPYpyq8Q1DLn1D3PjDvnHRkPWbLnHDLPjT" target="_blank" class="baidu-highlight">浏览器</a>浏览网页！')
+}
+}); 
+</script>
+<!--判断用户浏览器是否安装了Flash插件-->
+<SCRIPT type="text/javascript">
+var i_flash;
+var v_flash;
+// Netscape 
+if (navigator.plugins) {
+for (var i=0; i < navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.toLowerCase().indexOf("shockwave flash") >= 0) {
+i_flash = true;
+v_flash = navigator.plugins[i].description.substring(navigator.plugins[i].description.toLowerCase().lastIndexOf("flash ") + 6, navigator.plugins[i].description.length);
+}
+}
+}
+</SCRIPT>
+<!--VBScript方法-->
+<SCRIPT type="text/vbscript">
+//IE
+on error resume next
+set f = CreateObject("ShockwaveFlash.ShockwaveFlash")
+if IsObject(f) then
+i_flash = true
+v_flash = hex(f.FlashVersion())
+end if
+</SCRIPT>
+<!--JavaScript方法-->
+<SCRIPT type="text/javascript">
+if (i_flash) {
+document.writeln("Flash插件已安装！")
+if (v_flash) {
+document.writeln(" - 版本 " + v_flash);
+}
+} else {
+document.writeln("Flash插件未安装！")
+}
+</SCRIPT>
+</html>

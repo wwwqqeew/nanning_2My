@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/industryapplication/!svn/ver/12530/nntl/src/main/java/com/ritu/nanning/utils/base
+END
+EntityDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/EntityDao.java
+END
+EntityImplDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/EntityImplDao.java
+END
+BaseEntity2.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/BaseEntity2.java
+END
+BaseEntityVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/BaseEntityVo.java
+END
+BaseControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/12530/nntl/src/main/java/com/ritu/nanning/utils/base/BaseControl.java
+END
+JunitServiceBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/JunitServiceBase.java
+END
+JUnitActionBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/JUnitActionBase.java
+END
+JUnitDaoBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/JUnitDaoBase.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/BaseEntity.java
+END
+BaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/industryapplication/!svn/ver/12483/nntl/src/main/java/com/ritu/nanning/utils/base/BaseService.java
+END
+BaseEditControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/industryapplication/!svn/ver/12515/nntl/src/main/java/com/ritu/nanning/utils/base/BaseEditControl.java
+END
+EntityService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/EntityService.java
+END
+BaseInterfaceVo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/utils/base/BaseInterfaceVo.java
+END

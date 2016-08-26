@@ -1,0 +1,31 @@
+package com.ritu.nanning.repository;
+
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+import com.ritu.nanning.entity.Demo;
+import com.ritu.nanning.entity.User;
+import com.ritu.nanning.utils.base.EntityDao;
+/**
+ * @function demoJPA持久层
+ * @author cheng.G.Y 
+ * @date 2014-09-25
+ * @latitude 1.0
+ */
+public interface DemoDao extends PagingAndSortingRepository<Demo, Long>, EntityDao<Demo,Long>{
+	
+	
+	public Demo findById(Long id);//根据ID查找
+	
+//	public Page<Demo> findByIdIn(List<Long> ids, Pageable pageRequest);
+	
+//	@Query( "select* from Demo u where u.Id = ?1")
+//	public Demo findById(Long id);//根据ID查找
+	
+//	@Query( "select u.id,u.name from Demo u ")
+//	public List<Demo> find();//根据ID查找
+}

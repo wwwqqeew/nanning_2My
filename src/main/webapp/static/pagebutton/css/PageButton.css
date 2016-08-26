@@ -1,0 +1,89 @@
+.page-btns {
+	position: relative;
+	/* right: 15px; */
+}
+
+.page-btns input {
+	font: 12px;
+	font-family: monospace;
+	color: #777777;
+	margin: 5px 5px;
+	text-align: center;
+	width: 19px;
+	height: 25px;
+	border: 1px #d1d1d1 solid;
+	cursor: pointer;
+	padding: 0px;
+	text-align: center;
+	line-height: 20px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	 .gg{
+	 	  position: relative;
+  		  top: 7px;
+	 }
+}
+.li-my{
+	width: 2px !important;
+	 border: 0 none!important;
+	 background-color: #B8CCE3!important;
+	  margin: 0 5px!important;
+}
+.pre-page-btn{
+		background:transparent url("../images/table-191-450.gif")  -52px 5px no-repeat;
+}
+.next-page-btn{
+			background:transparent url("../images/table-191-450.gif")  -31px 5px no-repeat;
+	}
+.first-page-btn{
+			background:transparent url("../images/table-191-450.gif")  5px 5px no-repeat;
+	}
+.last-page-btn{
+		background:transparent url("../images/table-191-450.gif")  -14px 5px no-repeat;
+}
+
+.pre-page-btn-no{
+		background:transparent url("../images/table-191-450.gif")  -52px -15px no-repeat;
+		cursor: default !important;
+}
+.next-page-btn-no{
+			background:transparent url("../images/table-191-450.gif")  -31px -15px no-repeat;
+			cursor: default !important;
+	}
+.first-page-btn-no{
+			background:transparent url("../images/table-191-450.gif")  5px -15px no-repeat;
+			cursor: default !important;
+	}
+.last-page-btn-no{
+		background:transparent url("../images/table-191-450.gif")  -14px -15px no-repeat;
+		cursor: default !important;
+}
+.page-btn {
+	background:none;
+	border: none !important;
+}
+.page-btns{
+	background:none;
+}
+
+.page-btns .page-btn:active, .page-btns .current-page-btn {
+  background: none repeat scroll 0 0 #F0F0F0;
+  color: #777777;
+  cursor: default;
+}
+
+.page-btns .pre-page-btn {
+	font-family: monospace;
+}
+
+.page-btn:hover {
+	background: #75bbdd;
+}
+
+.page-btns .next-page-btn {
+	font-family: monospace;
+}
+
+.last-page-btn:hover, .first-page-btn:hover, .pre-page-btn:hover, .next-page-btn:hover {
+	background-color: #75bbdd;
+}

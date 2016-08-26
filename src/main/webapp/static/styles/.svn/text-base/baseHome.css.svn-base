@@ -1,0 +1,139 @@
+.btn-base {
+  background: url("../images/btn_empty.png");
+  background-repeat: no-repeat;
+  border: 0px solid #FFF !important;
+  color: #D1DFEA;
+  cursor: pointer;
+  height: 37px;
+  line-height: 37px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+}
+.btn-container{
+	display: inline-block;
+}
+.search-top{
+	color:#ffffff;
+	background-image: url("../images/bg_menu_checked_center.png");
+	line-height: 38px;
+    text-align: center;
+}
+.search-container{
+	border: 1px solid #aaa;
+	position: absolute;
+	width: 227px;
+	top:0;
+	bottom:10px;
+}
+.search-input {
+  background-color: #FFFFFF;
+  border: 1px solid #BCBCBC;
+  border-radius: 3px;
+  width: 128px;
+}
+.searchItem {
+	color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.searchSub-item{
+	text-align: center;
+	padding-top: 50px;
+}
+.main{
+	width:100%;
+}
+.item-list{
+	left: 240px;
+    position: absolute;
+    right: 0;
+}
+.demo-table thead th {
+  background-image: url("../images/table-bg.png");
+  background-repeat: repeat-x;
+  height: 35px;
+  text-align: center;
+}
+.demo-table {
+  border-bottom: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  position: relative;
+  width: 100%;
+}
+
+.demo-table thead th {
+  background-image: url("../images/table-bg.png");
+  background-repeat: repeat-x;
+  height: 35px;
+  text-align: center;
+}
+.demo-table tbody tr:hover{
+	background-color:#f5f5f5;
+	}
+
+.demo-table .th-short {
+  background-image: url("../images/table-bg.png");
+  background-repeat: repeat-x;
+    width: 44px;
+}
+ tbody tr:nth-child(2n+1){
+		background-color:#f9f9f9;
+	}
+.demo-table tbody td {
+	height: 35px;
+	text-align: center;
+}
+.demo-table tbody .clilk  {
+	background: #FFFFCC !important;
+}
+.demo-table tbody .hover td {
+	background: #efefef !important;
+}
+.demo-table tbody .double td {
+	background: #f6f6f6;
+	height: 35px;
+	text-align: center;
+	font-weight: normal;
+}
+.demo-table  td{
+  border-left: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+}
+.demo-table  th {
+  border-left: 1px solid #CCCCCC;
+}
+.demo-table .delete{
+	border: none;
+	width: 30px;
+	/*height: 20px;*/
+	height: 29px;
+	background: none;
+	cursor: pointer;
+}
+.demo-table .delete,.demo-table .delete-operate {
+	background-image: url("../images/delete.png") !important;
+	background-repeat: no-repeat;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../static/images/delete.png');
+	_background-image: none;
+}
+
+.item-result-pages {
+  background-image: url("../images/table-bg.png");
+  background-repeat: repeat-x;
+  border-left: 1px solid #A7CFE5;
+  border-right: 1px solid #A7CFE5;
+  height: 35px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.item-result-operate {
+	position: relative;
+	width: 100%;
+	height: auto;
+	height: 110px;
+}
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/industryapplication/!svn/ver/11949/nntl/src/main/java/com/ritu/nanning/service/account
+END
+ShiroDbRealm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/account/ShiroDbRealm.java
+END
+RoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/account/RoleService.java
+END
+AccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/industryapplication/!svn/ver/11895/nntl/src/main/java/com/ritu/nanning/service/account/AccountService.java
+END
+ResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/account/ResourceService.java
+END
+ResourceServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/java/com/ritu/nanning/service/account/ResourceServiceImpl.java
+END

@@ -1,0 +1,19 @@
+package com.ritu.nanning.utils;
+
+public class o {
+	public o(Object... fields){
+		System.out.print("共"+fields.length +"个参数，分别为：");
+		for (int i = 0; i < fields.length; i++) {
+			System.out.print("["+fields[i]+"] ");
+		}
+		System.out.print("\n");
+	}
+	
+	public static void o(Object... fields){
+		System.out.print("共"+fields.length +"个参数，分别为：");
+		for (int i = 0; i < fields.length; i++) {
+			System.out.print("["+fields[i]+"] ");
+		}
+		System.out.print("\n");
+	}
+}

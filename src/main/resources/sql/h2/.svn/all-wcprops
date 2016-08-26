@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/sql/h2
+END
+schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/sql/h2/schema.sql
+END
+schema-with-oracle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/industryapplication/!svn/ver/11819/nntl/src/main/resources/sql/h2/schema-with-oracle.sql
+END

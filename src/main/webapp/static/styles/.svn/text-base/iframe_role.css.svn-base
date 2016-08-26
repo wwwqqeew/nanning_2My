@@ -1,0 +1,26 @@
+.iframe-table {
+	width:100%;
+  margin-top: 0px;
+  padding: 0px;
+  border: none;
+ 
+}
+.iframe-form{
+	top: 0px;
+	position: relative;
+	padding: 0px;
+}
+.iframe-table td{
+	height: 28px;
+	padding: 8px;
+	border:none;
+	border-top: 1px solid #000000;
+	
+}  
+.one{
+	color: #000000;
+}
+.second{
+	text-indent: 50px;
+	color: #333333;
+} 

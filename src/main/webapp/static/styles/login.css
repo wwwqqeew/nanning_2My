@@ -1,0 +1,148 @@
+/* global */
+html, body {
+
+}
+.bg{
+  background-color: #80cef4;
+  background-image: url("../images/login-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/login-background.jpg',sizingMethod='scale');
+  color: #7D7D7D;
+  font-family: monospace;
+  font-size: 14px;
+  height: 100% !important;
+  min-height: 768px;
+  _height: 768px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.bg_minXY{
+
+}
+/* header */
+.header {
+	
+}
+/* content */
+.content {
+	position: relative;
+	margin: 0 auto;
+	top:140px;
+	width: 476px;
+	height: 522px;
+	text-align: left;
+	background: url("../images/login.png");
+	 _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/login.png');
+	 _background-image: none;
+}
+/* footer */
+.footer {
+	position:absolute;
+	width:100%;
+	left:0px;
+	bottom:0px;
+	height:25px;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.loginForm {
+  left: 31px;
+  position: absolute;
+  top: 94px;
+  width: 401px;
+  height: 291px;
+}
+
+.loginForm .control-group {
+	height: 38px;
+}
+
+.loginForm  .username,
+.loginForm  .password,
+.loginForm  .verifycode {
+	border: none;
+	background: none;
+	left: 160px;
+	line-height: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555555;
+	position: absolute;
+	height: 23px;
+}
+.username {
+  top: 84px;
+  width: 182px;
+}
+.password {
+  top: 126px;
+  width: 182px;
+}
+.verifycode {
+  top: 168px;
+  width: 93px;
+}
+#VerifyCode {
+  left: 187px;
+  position: absolute;
+  top: 168px;
+  width: 100%;
+  white-space: normal;
+}
+.loginForm .control-group .verifycode{
+	height: 22px;
+	width: 90px;
+	line-height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555555;
+}
+.VerifyCode-div{
+	width: 60px;
+	position: absolute;
+	margin-left: 100px;
+}
+.loginForm .control-group .checkbox{
+	line-height: 38px;
+}
+.loginForm .control-group .checkbox input{
+	margin: 6px 0px;
+	padding: 0px;
+}
+.submit_btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	background: url("../images/login-btn.png");
+	position: relative;
+	top: 233px;
+	left: 155px;
+	width: 92px;
+	height: 36px;
+	padding: 0;
+}
+.submit_btn:active{
+	background: url("../images/login-btn-down.png");
+}
+.submit_btn_cz {
+	cursor: pointer;
+	background: none;
+	border: none;
+	background: url("../images/login-btn-cz.png");
+	position: relative;
+	top: 233px;
+	left: 155px;
+	width: 92px;
+	height: 36px;
+	padding: 0;
+}
+.submit_btn_cz:active{
+	background: url("../images/login-btn-cz-down.png");
+}

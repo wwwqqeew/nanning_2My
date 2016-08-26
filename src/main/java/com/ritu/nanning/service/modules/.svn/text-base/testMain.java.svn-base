@@ -1,0 +1,38 @@
+package com.ritu.nanning.service.modules;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
+
+public class testMain {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		addOne();
+		testURLGet() ;
+	}
+
+	public static void addOne() throws Exception {
+		FileWriter fw=null;
+		String path=testMain.class.getResource("/port.properties").getPath(); 
+		System.out.println("pp:"+path);
+		File file=new File(path);
+		//true 参数制定从文件的末尾开始写数据
+		fw=new FileWriter(file,true);
+		fw.close();
+		}
+	
+	private  static void testURLGet() throws URISyntaxException, IOException {
+		// TODO Auto-generated method stub
+		URL url = testMain.class.getResource("/port.properties");
+		System.out.println("222:"+url.toURI());
+        File file = new File(url.toURI());
+        FileWriter writer = new FileWriter(file, true);
+	}
+}

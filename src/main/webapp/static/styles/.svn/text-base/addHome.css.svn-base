@@ -1,0 +1,71 @@
+<!--����Excel��ʼ-->
+.export-main{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.export-div {
+  background-color: #ebf8fd;
+  border: 1px solid #afcde3;
+  border-radius: 3px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 550px;
+  z-index: 99;
+}
+.export-contain {
+  background-color: white;
+  bottom: 7px;
+  left: 7px;
+  position: absolute;
+  right: 7px;
+  top: 23px;
+  border: 1px solid #afcde3;
+}
+.export-del {
+  background-image: url("../images/delcompose.png") !important;
+  background-repeat: no-repeat;
+  height: 14px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 14px;
+  cursor: pointer;
+}
+.export-btn {
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.export-button {
+  background: none repeat scroll 0 0 rgb(117, 187, 221);
+  border: 0 solid rgb(117, 187, 221);
+  box-shadow: 2px 1px 1px rgb(117, 187, 221);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  position: relative;
+  top: 10px;
+  width: 72px;
+}
+.my-if-btn {
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+}
+.export-slt-all{
+	width: 100%;
+	height: 20px;
+}
+.cb-label {
+  float: left;
+  height: 20px;
+  overflow: hidden;
+  width: 178px;
+}
+<!--����Excel����

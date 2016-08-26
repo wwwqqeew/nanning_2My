@@ -1,0 +1,56 @@
+.iframe-table {
+	width:80%;
+	height:287px;
+  border: none;
+  margin-top: 0px;
+ 
+}
+.iframe-form{
+	top: 13px;
+	position: relative;
+}
+ .iframe-table td{
+	border: none;
+}  
+.iframe-table .right{
+	border:1px solid #808080;
+	border-left:none;
+  
+}
+.iframe-table .left{
+	border:1px solid #808080;
+	border-right:none;
+	text-align: center;
+	color: #333333;
+  
+}
+.text-input, .item-operate select,.iframe-select{
+    color: rgb(119, 119, 119);
+    border: 1px solid rgb(170, 170, 170);
+    width: 312px;
+	height:27px;
+	border-radius:3px;
+}
+.iframe-textarea{
+    color: rgb(119, 119, 119);
+    border: 1px solid rgb(170, 170, 170);
+    width: 312px;
+	height:100px;
+	border-radius:3px;
+}
+
+  
+
+.iframe-button{
+	position: relative;
+    top: 10px;
+    height: 25px;
+    background: none repeat scroll 0% 0% rgb(117, 187, 221);
+    border: 0px solid rgb(117, 187, 221);
+    cursor: pointer;
+    width: 80px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: 2px 1px 1px rgb(117, 187, 221);
+    font-size: 15px;!important;
+	}
